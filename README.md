@@ -27,3 +27,24 @@ Please steal these ideas and share them with me.
 I'm forgetting something and it is driving me computer crazy...
 
 Time for a drink :+1:
+
+# １０月０８日
+
+- old idea, but still want: Docker meta language
+  - REPO <url>: upload to repo
+  - TAG <string>: add tag on upload
+  - UNIQUETAG <string>: don't overwrite tags
+  - SOURCE <filename>: evaluate another dockerfile
+  - TEST <string>: fail build on failure, discard changes on success
+  - SHELL <string>: choose interactive shell for RUN commands
+  - SQUASH: copy data to new image
+  - ATOMIC <bool>: specify commands as not creating new fs layers
+  - ATOMIC <cmd>: append command to previous layer
+  - INSTALL <tool> <package> <version>: update listing, install package with normal tool (nix, apt, *any*, etc), delete cache
+  - PIN <tool>: use same cache for all layers
+  - MEMRUN <path> <args>: run executable from host in docker image (ramdisk? temp folder? volume?)
+  - CHIMAGE <image>: create new image, copy previous created/changed files
+  - HOST RUN <string>: run command on host
+  - WEBHOOK <url> <payload>: hit some endpoint
+- simple binary repo based on docker images
+  - example: `my_tool --pip luastyle` or `my_tool mediainfo`
