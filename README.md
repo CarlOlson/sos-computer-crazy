@@ -48,3 +48,9 @@ Time for a drink :+1:
   - WEBHOOK <url> <payload>: hit some endpoint
 - simple binary repo based on docker images
   - example: `my_tool --pip luastyle` or `my_tool mediainfo`
+
+# 4月06日
+
+- make shell functions check and install deps
+- make all shell functions speak json when non-interactive
+  - or just make terminals speak json already :sigh:
